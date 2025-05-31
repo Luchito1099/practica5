@@ -65,6 +65,14 @@ p.p-item{
     font-size: 0.875rem;
     color: #52525A; 
 }
+p.comment-box {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #52525A; 
+
+}
 
 section {
     max-width: 1136px;
@@ -118,6 +126,7 @@ div.box-img {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    flex-wrap: wrap;
 }
 
 
@@ -127,8 +136,40 @@ div.box-img {
 @media (max-width: 1024px) {
 
     div.testimonials-all {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 15px ;
+        max-width: 100%;
+        margin: 40px;
+        gap: 20px;
+        }
+        
+    div.box-item{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    }
+    div.box-item1 {
+        margin-left: 45%;
+    }
+    div.box-item2{
+        
+        margin-left: 20%;
     }
 }
+@media (max-width: 768px) {
+    div.box-item{
+        width: 100%;
+    }
+    div.box-item1 {
+        margin-left: 0;
+    }
+    div.box-item2{
+        margin-left: 0;
+    }
+    div.testimonials-all {
+        margin-top: 40px;
+        gap: 20px;
+    }
+}
+
